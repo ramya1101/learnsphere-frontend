@@ -1,0 +1,13 @@
+<h2>Edit Course</h2>
+<div class="card" style="padding:12px;">
+  <label>Title</label>
+  <input [(ngModel)]="model.title" class="form-control mb-2">
+  <label>Description</label>
+  <textarea [(ngModel)]="model.description" class="form-control mb-2"></textarea>
+  <label>Duration</label>
+  <input [(ngModel)]="model.duration" class="form-control mb-2">
+  <label>Prerequisites</label>
+  <input [(ngModel)]="model.prerequisites" class="form-control mb-2">
+  <button class="btn btn-primary" (click)="save()">Save</button>
+</div>
+ 

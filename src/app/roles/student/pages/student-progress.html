@@ -1,0 +1,9 @@
+<h2>Progress</h2>
+<div *ngFor="let p of progress" class="card" style="padding:12px;margin-bottom:8px;">
+  <div><b>{{p.course?.title}}</b></div>
+  <div class="bar" style="background:#e5e7eb;height:10px;border-radius:6px;overflow:hidden;">
+    <div [style.width.%]="p.percent" style="height:10px;background:#22c55e;"></div>
+  </div>
+  <small>{{p.percent}}%</small>
+</div>
+ 

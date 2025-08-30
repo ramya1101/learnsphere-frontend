@@ -1,0 +1,51 @@
+<!-- <div class="container text-center mt-5">
+  <h1 class="mb-4">Welcome to LearnSphere</h1>
+  <p>Select your role to continue:</p>
+ 
+  <div class="d-flex justify-content-center gap-3 mt-4">
+<button (click)="goToLogin('student')">Login as Student</button>
+<button (click)="goToLogin('mentor')">Login as Mentor</button> 
+<button (click)="goToLogin('admin')">Login as Admin</button>
+ </div>
+ 
+  <div class="mt-4">
+<button (click)="goToRegister('student')">Register as Student</button>
+<button (click)="goToRegister('mentor')">Register as Mentor</button>
+<button (click)="goToLogin('admin')">Login as Admin</button>
+</div>  -->
+ 
+
+<!-- <div class="home-container">
+  <h1>Welcome to LearnSphere</h1>
+  <p>Select your role to continue:</p>
+ 
+  <button (click)="goToRegister('student')">Register as Student</button>
+  <button (click)="goToLogin('student')">Login as Student</button>
+ 
+
+  <button (click)="goToRegister('mentor')">Register as Mentor</button>
+  <button (click)="goToLogin('mentor')">Login as Mentor</button>
+ 
+  <button (click)="goToRegister('admin')">Register as Admin</button>
+  <button (click)="goToLogin('admin')">Login as Admin</button>
+</div> -->
+ 
+
+
+<div class="container text-center mt-5">
+  <h1 class="mb-4">Welcome to LearnSphere</h1>
+  <p>Select your role to continue:</p>
+ 
+  <div class="d-flex justify-content-center gap-3 mt-4">
+    <a routerLink="/login/admin" class="btn btn-primary">Admin</a>
+    <a routerLink="/login/mentor" class="btn btn-success">Mentor</a>
+    <a routerLink="/login/student" class="btn btn-info">Student</a>
+  </div>
+ 
+  <div class="mt-4">
+    <a routerLink="/register/admin">Register as Admin</a> | 
+    <a routerLink="/register/mentor">Register as Mentor</a> | 
+    <a routerLink="/register/student">Register as Student</a>
+  </div>
+</div>
+  

@@ -1,0 +1,13 @@
+<h2>Browse Courses</h2>
+<ul class="list-group">
+  <li *ngFor="let c of courses" class="list-group-item d-flex justify-content-between align-items-center">
+    <div>
+      <div><b>{{c.title}}</b></div>
+      <small>Syllabus: {{c.description}}</small><br>
+      <small>Duration: {{c.duration}}</small> |
+      <small>Prerequisites: {{c.prerequisites}}</small>
+    </div>
+    <button class="btn btn-primary btn-sm" (click)="enroll(c.id)">Enroll</button>
+  </li>
+</ul>
+ 

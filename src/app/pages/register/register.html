@@ -1,0 +1,107 @@
+<!-- <form (ngSubmit)="onRegister()">
+  <input type="text" [(ngModel)]="name" name="name" placeholder="Full Name" required>
+  <input type="email" [(ngModel)]="email" name="email" placeholder="Email" required>
+  <input type="password" [(ngModel)]="password" name="password" placeholder="Password" required>
+  <input type="text" [(ngModel)]="role" name="role" placeholder="Role" required>
+  <button type="submit">Register</button>
+</form>
+  -->
+
+<div class="container mt-5">
+  <h2 class="text-center">Register as {{ role | titlecase }}</h2>
+  <form (ngSubmit)="onRegister()">
+    <div class="mb-3">
+      <label>Name</label>
+      <input [(ngModel)]="name" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Email</label>
+      <input [(ngModel)]="email" name="email" type="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Password</label>
+      <input [(ngModel)]="password" name="password" type="password" class="form-control" required>
+    </div>
+     <div class="mb-3">
+      <label>Role</label>
+      <input [(ngModel)]="role" name="role" type="role" class="form-control" required>
+    </div>
+
+    <button type="submit" class="btn btn-success w-100">Register</button>
+  </form>
+</div>
+
+
+
+<!-- <div class="container mt-4">
+  <h2>Register as {{ role | titlecase }}</h2>
+ 
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label>Name</label>
+      <input [(ngModel)]="name" name="name" type="text" class="form-control" required>
+    </div>
+ 
+    <div class="mb-3">
+      <label>Email</label>
+      <input [(ngModel)]="email" name="email" type="email" class="form-control" required>
+    </div>
+ 
+    <div class="mb-3">
+      <label>Password</label>
+      <input [(ngModel)]="password" name="password" type="password" class="form-control" required>
+    </div>
+ 
+     hidden input just in case 
+    <input type="hidden" [(ngModel)]="role" name="role">
+ 
+    <button type="submit" class="btn btn-success">Register</button>
+  </form>
+</div>
+ 
+ -->
+
+
+<!-- <div class="container mt-5">
+  <h2 class="text-center">Register as {{ role | titlecase }}</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label>Name</label>
+      <input [(ngModel)]="name" name="name" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Email</label>
+      <input [(ngModel)]="email" name="email" type="email" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Password</label>
+      <input [(ngModel)]="password" name="password" type="password" class="form-control" required>
+    </div>
+    <div class="mb-3">
+      <label>Role</label>
+      <input [(ngModel)]="role" name="role" type="role" class="form-control" required>
+    </div>
+    <button type="submit" class="btn btn-success w-100">Register</button>
+  </form>
+</div>
+ 
+
+<div class="container mt-5">
+  <h2 class="text-center">Register as {{ role | titlecase }}</h2>
+  <form (ngSubmit)="register()" class="mt-4">
+    <div class="mb-3">
+      <label>Full Name</label>
+      <input [(ngModel)]="name" name="name" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label>Email</label>
+      <input [(ngModel)]="email" name="email" type="email" class="form-control" required />
+    </div>
+    <div class="mb-3">
+      <label>Password</label>
+      <input [(ngModel)]="password" name="password" type="password" class="form-control" required />
+    </div>
+    <button type="submit" class="btn btn-success w-100">Register</button>
+  </form>
+</div>
+  -->

@@ -1,0 +1,7 @@
+<h2>My Courses</h2>
+<ul class="list-group">
+  <li *ngFor="let e of enrollments" class="list-group-item">
+    <b>{{e?.course?.title}}</b> — Mentor: {{e?.course?.mentor?.name}}
+  </li>
+</ul>
+ 

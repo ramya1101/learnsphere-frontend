@@ -1,0 +1,27 @@
+<h2>Sessions</h2>
+<div class="mb-3">
+  <label>Select Course</label>
+  <select class="form-control" [(ngModel)]="selectedCourseId" (change)="loadSessions()">
+    <option [ngValue]="undefined">-- choose --</option>
+    <option *ngFor="let c of myCourses" [ngValue]="c.id">{{c.title}}</option>
+  </select>
+</div>
+ 
+<div class="card" style="padding:12px;margin-bottom:16px;">
+  <h4>Schedule Session</h4>
+  <input [(ngModel)]="topic" class="form-control mb-2" placeholder="Topic">
+  <input [(ngModel)]="startTime" type="datetime-local" class="form-control mb-2">
+  <input [(ngModel)]="endTime" type="datetime-local" class="form-control mb-2">
+  <button class="btn btn-success" (click)="create()">Create</button>
+</div>
+ 
+<table class="table">
+  <thead><tr><th>Topic</th><th>Start</th><th>End</th><th></th></tr></thead>
+  <tbody>
+    <tr *ngFor="let s of sessions">
+      <td>{{s.topic}}</td><td>{{s.startTime | date:'short'}}</td><td>{{s.endTime | date:'short'}}</td>
+       <button class="btn btn-sm btn-danger" (click)="remove(s.id)">Delete</button>
+    </tr>
+  </tbody>
+</table>
+ 
